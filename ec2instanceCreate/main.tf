@@ -11,7 +11,7 @@ terraform {
 
 provider "aws" {
   region  = "us-west-2"
-  profile = "terrafrom"
+  profile = "terraform"
 }
 
 resource "aws_instance" "exampleServer" {
