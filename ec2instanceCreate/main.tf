@@ -18,7 +18,7 @@ resource "aws_instance" "exampleServer01" {
   ami             = "ami-07d1e0a32156d0d21"
   instance_type   = "t2.micro"
   key_name        = "aws"
-  security_groups = ["launch-wizard-2"]
+  security_groups = ["exampleSecurityGroup01"]
 
   tags = {
     Name = "exampleServer01"
