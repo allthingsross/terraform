@@ -18,7 +18,7 @@ resource "aws_s3_bucket" "allthingsross" {
   bucket = "allthingsross"
 
   tags = {
-    Name        = "allthingsross"
-    Environment = "exampleEnv"
+    Name        = "allthingsrossbucket"
+    Environment = "allthingsross"
   }
 }
