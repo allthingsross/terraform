@@ -22,5 +22,6 @@ resource "aws_instance" "exampleServer01" {
 
   tags = {
     Name = "exampleServer01"
+Environment = "allthingsross"
   }
 }
