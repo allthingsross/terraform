@@ -15,10 +15,21 @@ provider "aws" {
 }
 
 resource "aws_s3_bucket" "allthingsross" {
-  bucket = "allthingsross"
+  bucket        = "allthingsross"
+  force_destroy = "true"
 
   tags = {
     Name        = "allthingsrossbucket"
+    Environment = "allthingsross"
+  }
+}
+
+resource "aws_s3_bucket" "allthingsross01" {
+  bucket = "allthingsross01"
+  force_destroy = "true"
+
+  tags = {
+    Name        = "allthingsrossbucket01"
     Environment = "allthingsross"
   }
 }
