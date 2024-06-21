@@ -13,3 +13,12 @@ provider "aws" {
   region  = "eu-west-2"
   profile = "terraform"
 }
+
+resource "aws_s3_bucket" "allthingsross" {
+  bucket = "allthingsross"
+
+  tags = {
+    Name        = "allthingsross"
+    Environment = "exampleEnv"
+  }
+}
