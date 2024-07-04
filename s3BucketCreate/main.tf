@@ -24,12 +24,12 @@ resource "aws_s3_bucket" "allthingsross" {
   }
 }
 
-resource "aws_s3_bucket" "allthingsross01" {
-  bucket = "allthingsross01"
+resource "aws_s3_bucket" "allthingsross03" {
+  bucket = "allthingsross03"
   force_destroy = "true"
 
   tags = {
-    Name        = "allthingsrossbucket01"
+    Name        = "allthingsrossbucket03"
     Environment = "allthingsross"
   }
 }
